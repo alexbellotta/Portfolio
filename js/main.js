@@ -1,18 +1,13 @@
-/*==================== MENU SHOW Y HIDDEN ==================*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
 
-/*======= MENU SHOW ========*/
-/* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
-/*======= MENU SHOW ========*/
-/* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
@@ -20,7 +15,7 @@ if(navClose){
 }
 
 /*==================== REMOVE MENU MOBILE ==================*/
-const navLink = document.querySelectorAll('.nav__link');
+const navLink = document.querySelectorAll('.navigation-link');
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
